@@ -1,0 +1,10 @@
+1. 通过SoapUI和Wisdom RestClient做测试
+   SOAPUI可以进行用户认证，取得Authorization和sha，测试报告需要通过jasper report来显示
+   Wisdom RestClient可以做些基本测试，但对于用户登录认证似乎有困难，但测试报告比较清晰
+
+2. 测试了用户添加、删除、修改文件，并对用户登录与不登录情况进行了测试，也对用户输入数据或不输入数据情况进行了测试，
+结果只进行了XML输出检查，没有添加Assert语句进行判断
+
+工具说明：
+Wisdom： https://github.com/Wisdom-Projects/rest-client
+XML Jason Parse： http://tool.oschina.net/codeformat/json
