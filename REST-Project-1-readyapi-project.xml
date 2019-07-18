@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="54b77e68-35e6-41eb-bf6a-5d00bdfdcf89" created="2.7.0" activeEnvironment="Default environment" name="REST Project 1" updated="2.7.0 2019-05-30T13:25:24Z" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value="XML"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Slack Channel(s)" value=""/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Test Suite Tags" value=""/>
+  <con:entry key="Select Report Type" value="JUnit-Style report for automation"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Test Suite" value="https://github.com TestSuite"/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Test Case" value="https://github.com TestCase 1"/>
+  <con:entry key="Slack Access Token" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\ReadyAPI-2.7.0\bin"/>
+  <con:entry key="Environment" value="Default environment"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="${WORKSPACE}"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting>
+  </con:settings>
+  <con:interface xsi:type="con:RestService" id="7b7a03e0-6eee-421f-9d88-bd91ef16ca3f" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://github.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://github.com</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Test2.txt" path="/yys19781104/TestRest/tree/master/SpringBoot/test2.txt" id="e11fc4da-6849-4743-8f04-1be9c1468f7d">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Test2.txt" id="c870a950-d458-4481-a87b-b5921e085a49" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>text/html; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="edd4c002-ac14-4505-9f36-83b8d4c5c620" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://github.com</con:endpoint>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="0a305b41-511b-4e8e-a441-3c6cada8d1cf" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 1" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
+    <con:resource name="/users/yys19781104/gists" path="/users/yys19781104/gists" id="11c7f9e0-66b9-4dcf-a6bc-0d609ce8d19f">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="GET" id="badb048a-14e6-4b65-9a85-f64e99464406" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="GET Request" id="4dede0c9-65f9-4d41-9b95-dcdf8f9649ef" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://api.github.com</con:endpoint>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="479aa77c-9004-4949-90bc-c19218dfef70" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 2" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints/>
+    <con:resource name="/authorizations" path="/authorizations" id="115fa524-9287-464f-99a0-e9ebe5b82b8a">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="GET" id="69010f68-aae6-49c1-a2c8-5e72cff52a30" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element xmlns:aut="https://api.github.com/authorizations">aut:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="GET Request" id="4dd5f667-6926-4d58-8807-2724ad50b6e6" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://api.github.com</con:endpoint>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="b673a3a4-730d-47f2-a725-d2de0b2d3e63" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 3" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints/>
+    <con:resource name="/yys19781104/TestRest/tree/master/SpringBoot/test1.txt" path="/yys19781104/TestRest/tree/master/SpringBoot/test1.txt" id="069caae9-6b9c-4a2b-9c2e-f5f53d973ae8">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="DELETE" id="6971fbb1-3505-445d-89bc-0717c3c403c6" method="DELETE">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html; charset=utf-8</con:mediaType>
+          <con:status>422</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="DELETE Request" id="f0bd56b5-607d-4839-b91e-ff813c803625" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://github.com</con:endpoint>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="947d6a4a-e56d-4ada-956f-791d1bd49741" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 4" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints/>
+    <con:resource name="/repos/yys19781104/TestRest/contents/SpringBoot/test1.txt" path="/repos/yys19781104/TestRest/contents/SpringBoot/test1.txt" id="5ff64add-0f8d-44cc-8d22-fe304ad90eed">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="DELETE" id="e75e379e-bc04-4f51-91e1-f4272f5c9a51" method="DELETE">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element xmlns:tes="https://api.github.com/repos/yys19781104/TestRest/contents/SpringBoot/test1.txt">tes:Fault</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:tes="https://api.github.com/repos/yys19781104/TestRest/contents/SpringBoot/test1.txt">tes:Response</con:element>
+        </con:representation>
+        <con:request name="DELETE Request" id="beb5501a-8e85-4e62-ad9e-e60c83917ce3" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://api.github.com</con:endpoint>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="e7ecaaee-d215-427e-97a5-e88ca6d5e903" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 5" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
+    <con:resource name="/repos/yys19781104/TestRest/contents/SpringBoot/test4.txt" path="/repos/yys19781104/TestRest/contents/SpringBoot/test4.txt" id="d445b3a3-8f08-43fd-bf9c-6f317282563b">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="POST" id="010b165a-4ef2-4587-92f7-37ebf793c901" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element xmlns:tes="https://api.github.com/repos/yys19781104/TestRest/contents/SpringBoot/test4.txt">tes:Fault</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="POST Request" id="00a0b0b3-c6dc-4d1e-b976-50b4c4504ea8" mediaType="application/json" postQueryString="false">
+          <con:settings/>
+          <con:endpoint>https://api.github.com</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="0c49eb73-6272-45e9-b0ac-f1572dd315f2" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 6" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
+    <con:resource name="/repos/yys19781104/TestRest/contents/SpringBoot/test5.txt" path="/repos/yys19781104/TestRest/contents/SpringBoot/test5.txt" id="2f2d98d7-ad68-435e-9f7c-8d3b12fbefbe">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="PUT" id="f2c76db7-c45f-4af1-a86c-4f5ea74e650f" method="PUT">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>201 200</con:status>
+          <con:params/>
+          <con:element xmlns:tes="https://api.github.com/repos/yys19781104/TestRest/contents/SpringBoot/test5.txt">tes:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="PUT Request" id="31210ca8-de0a-422b-8fd9-ae515b3226d3" mediaType="application/json" postQueryString="false">
+          <con:settings/>
+          <con:endpoint>https://api.github.com</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="fb8761ce-14f1-4d1d-9813-7e7e7556d539" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 7" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints/>
+    <con:resource name="/repos/yys19781104/TestRest/contents/SpringBoot/test1.txt" path="/repos/yys19781104/TestRest/contents/SpringBoot/test1.txt" id="13c14415-7cb1-4840-bfd6-cb067ea3fb62">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="GET" id="80d574ec-89bd-4813-ada7-f69db29671c8" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:tes="https://api.github.com/repos/yys19781104/TestRest/contents/SpringBoot/test1.txt">tes:Response</con:element>
+        </con:representation>
+        <con:request name="GET Request" id="f9791209-35f0-403a-aeeb-3c5d7244d207" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://api.github.com</con:endpoint>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="83df5498-2ac7-452e-8cd5-dc6525fcde44" name="https://github.com TestSuite">
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="408bb7b3-5633-4c5e-8012-86ad91a5083d" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="https://github.com TestCase 1" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="Get File Request 1" id="dc7b2f4e-d780-416a-ba94-b5484dd60212">
+        <con:settings/>
+        <con:config service="https://github.com" resourcePath="/yys19781104/TestRest/tree/master/SpringBoot/test2.txt" methodName="Test2.txt" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Get File Request 1" id="edd4c002-ac14-4505-9f36-83b8d4c5c620" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://github.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://github.com/yys19781104/TestRest/blob/master/SpringBoot/test2.txt</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="cb7a9562-348d-464f-9fc3-42216a03ecbd" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="364f32e5-2361-4c0c-84b4-60d2a6bce0b9" name="Response SLA">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:username>yys19781104</con:username>
+              <con:password>yangys968452</con:password>
+              <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Global HTTP Settings</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Get Authorization Request" id="4523af69-2991-42f5-9cb0-69a6a1550302">
+        <con:settings/>
+        <con:config service="REST Service 2" resourcePath="/authorizations" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Get Authorization Request" id="4dd5f667-6926-4d58-8807-2724ad50b6e6" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://api.github.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.github.com/authorizations</con:originalUri>
+            <con:credentials>
+              <con:username>yys19781104</con:username>
+              <con:password>yangys968452</con:password>
+              <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+              <con:preemptive>true</con:preemptive>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Preemptive</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Delete Request with Content" id="aad12c6a-e2ea-4892-a9ca-2a896f383c04">
+        <con:settings/>
+        <con:config service="REST Service 3" resourcePath="/yys19781104/TestRest/tree/master/SpringBoot/test1.txt" methodName="DELETE" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Delete Request with Content" id="f0bd56b5-607d-4839-b91e-ff813c803625" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://github.com</con:endpoint>
+            <con:request>{
+  "message": "delete from yangys testing",
+  "content": "bXkgdXBkYXRlZCBmaWxlIGNvbnRlbnRz",
+  "sha": "57642f5283c98f6ffa75d65e2bf49d05042b4a6d"
+}</con:request>
+            <con:originalUri>https://github.com/yys19781104/TestRest/tree/master/SpringBoot/test1.txt</con:originalUri>
+            <con:credentials>
+              <con:username>yys19781104</con:username>
+              <con:password>yangys968452</con:password>
+              <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Global HTTP Settings</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Delete Request without content" id="f7907165-3dd8-4667-a2bf-7b18c0f72f1d">
+        <con:settings/>
+        <con:config service="REST Service 4" resourcePath="/repos/yys19781104/TestRest/contents/SpringBoot/test1.txt" methodName="DELETE" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Delete Request without content" id="beb5501a-8e85-4e62-ad9e-e60c83917ce3" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://api.github.com</con:endpoint>
+            <con:request>{
+  "message": "update from yangys testing",
+  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+}</con:request>
+            <con:originalUri>https://api.github.com/repos/yys19781104/TestRest/contents/SpringBoot/test1.txt</con:originalUri>
+            <con:credentials>
+              <con:username>yys19781104</con:username>
+              <con:password>yangys968452</con:password>
+              <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+              <con:preemptive>true</con:preemptive>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Preemptive</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="POST Request" id="59b29824-5ba0-4fb2-bc69-9ed52cfee413">
+        <con:settings/>
+        <con:config service="REST Service 5" resourcePath="/repos/yys19781104/TestRest/contents/SpringBoot/test4.txt" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="POST Request" id="00a0b0b3-c6dc-4d1e-b976-50b4c4504ea8" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://api.github.com</con:endpoint>
+            <con:request>{
+  "message": "a new commit message",
+  "committer": {
+    "name": "yys19781104",
+    "email": "yys19781104@163.com"
+  },
+  "content": "bXkgdXBkYXRlZCBmaWxlIGNvbnRlbnRz",
+  "sha": "4c0ffcc6f798925a39706b0a8e9e1262ac224d13"
+}</con:request>
+            <con:originalUri>https://api.github.com/repos/yys19781104/TestRest/contents/SpringBoot/test4.txt</con:originalUri>
+            <con:credentials>
+              <con:username>yys19781104</con:username>
+              <con:password>yangys968452</con:password>
+              <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Global HTTP Settings</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="PUT Request" id="e78c61be-7d54-4751-9565-5ef33af754e5">
+        <con:settings/>
+        <con:config service="REST Service 6" resourcePath="/repos/yys19781104/TestRest/contents/SpringBoot/test5.txt" methodName="PUT" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="PUT Request" id="31210ca8-de0a-422b-8fd9-ae515b3226d3" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint xsi:nil="true"/>
+            <con:request>{
+  "message": "update from yangys testing",
+  "content": "bXkgdXBkYXRlZCBmaWxlIGNvbnRlbnRz",
+  "sha": "57642f5283c98f6ffa75d65e2bf49d05042b4a6d"
+}</con:request>
+            <con:originalUri>https://api.github.com/repos/yys19781104/TestRest/contents/SpringBoot/test5.txt</con:originalUri>
+            <con:credentials>
+              <con:username>yys19781104</con:username>
+              <con:password>yangys968452</con:password>
+              <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+              <con:preemptive>true</con:preemptive>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Preemptive</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Get File Request 2" id="752455bc-0a06-4ddf-9c58-0a874430d33b">
+        <con:settings/>
+        <con:config service="REST Service 7" resourcePath="/repos/yys19781104/TestRest/contents/SpringBoot/test1.txt" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Get File Request 2" id="f9791209-35f0-403a-aeeb-3c5d7244d207" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://api.github.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.github.com/repos/yys19781104/TestRest/contents/SpringBoot/test1.txt</con:originalUri>
+            <con:credentials>
+              <con:username>yys19781104</con:username>
+              <con:password>yangys968452</con:password>
+              <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+              <con:preemptive>true</con:preemptive>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Preemptive</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:reportTemplates/>
+    <con:xmlTemplates/>
+    <con:xmlTemplates/>
+    <con:parameters/>
+    <con:parameters/>
+  </con:reporting>
+  <con:reporting/>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to SoapUI Pro tests
+
+// If hardcoding the token, uncomment and change line 5
+// def token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// def token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// def headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>
