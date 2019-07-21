@@ -378,39 +378,6 @@
           </con:restRequest>
         </con:config>
       </con:testStep>
-      <con:testStep type="restrequest" name="Delete Request without content" id="f7907165-3dd8-4667-a2bf-7b18c0f72f1d">
-        <con:settings/>
-        <con:config service="REST Service 4" resourcePath="/repos/yys19781104/TestRest/contents/SpringBoot/test1.txt" methodName="DELETE" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="Delete Request without content" id="beb5501a-8e85-4e62-ad9e-e60c83917ce3" mediaType="application/json" postQueryString="false">
-            <con:settings>
-              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-            </con:settings>
-            <con:endpoint>https://api.github.com</con:endpoint>
-            <con:request>{
-  "message": "update from yangys testing",
-  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
-}</con:request>
-            <con:originalUri>https://api.github.com/repos/yys19781104/TestRest/contents/SpringBoot/test1.txt</con:originalUri>
-            <con:assertion type="Simple Contains" id="65ca7e9c-3a24-4187-a38a-3f0a44395b15" name="Contains">
-              <con:configuration>
-                <token>update from yangys testing</token>
-                <ignoreCase>false</ignoreCase>
-                <useRegEx>false</useRegEx>
-              </con:configuration>
-            </con:assertion>
-            <con:credentials>
-              <con:username>yys19781104</con:username>
-              <con:password>yangys968452</con:password>
-              <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
-              <con:preemptive>true</con:preemptive>
-              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
-              <con:authType>Preemptive</con:authType>
-            </con:credentials>
-            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-            <con:parameters/>
-          </con:restRequest>
-        </con:config>
-      </con:testStep>
       <con:testStep type="restrequest" name="PUT Request" id="e78c61be-7d54-4751-9565-5ef33af754e5">
         <con:settings/>
         <con:config service="REST Service 6" resourcePath="/repos/yys19781104/TestRest/contents/SpringBoot/test5.txt" methodName="PUT" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -485,8 +452,46 @@ exists(//ns1:name[text()='test5.txt'])</path>
           </con:restRequest>
         </con:config>
       </con:testStep>
+      <con:testStep type="restrequest" name="Delete Request without content" id="f7907165-3dd8-4667-a2bf-7b18c0f72f1d">
+        <con:settings/>
+        <con:config service="REST Service 4" resourcePath="/repos/yys19781104/TestRest/contents/SpringBoot/test1.txt" methodName="DELETE" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Delete Request without content" id="beb5501a-8e85-4e62-ad9e-e60c83917ce3" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://api.github.com</con:endpoint>
+            <con:request>{
+  "message": "update from yangys testing",
+  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+}</con:request>
+            <con:originalUri>https://api.github.com/repos/yys19781104/TestRest/contents/SpringBoot/test1.txt</con:originalUri>
+            <con:assertion type="Simple Contains" id="65ca7e9c-3a24-4187-a38a-3f0a44395b15" name="Contains">
+              <con:configuration>
+                <token>update from yangys testing</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:username>yys19781104</con:username>
+              <con:password>yangys968452</con:password>
+              <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+              <con:preemptive>true</con:preemptive>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Preemptive</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
       <con:properties/>
       <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>f7907165-3dd8-4667-a2bf-7b18c0f72f1d</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
     </con:testCase>
     <con:properties/>
     <con:reportParameters/>
