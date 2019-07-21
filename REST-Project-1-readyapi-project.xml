@@ -425,7 +425,7 @@
   "sha": "fb617c9e42866ca24d0ff8e0c2725048f6f9530c"
 }</con:request>
             <con:originalUri>https://api.github.com/repos/yys19781104/TestRest/contents/SpringBoot/test5.txt</con:originalUri>
-            <con:assertion type="XPath Match" id="cdcc8fd2-7cc9-40bc-9ede-936793baad79" name="XPath Match">
+            <con:assertion type="XPath Match" id="cdcc8fd2-7cc9-40bc-9ede-936793baad79" name="XPath Match" disabled="true">
               <con:configuration>
                 <path>declare namespace ns1='https://api.github.com/repos/yys19781104/TestRest/contents/SpringBoot/test5.txt';
 exists(//ns1:name[text()='test5.txt'])</path>
@@ -433,6 +433,13 @@ exists(//ns1:name[text()='test5.txt'])</path>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
                 <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="6038ae75-954a-46fc-8edc-fcecfb94c09f" name="Contains">
+              <con:configuration>
+                <token>update from yangys testing</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
               </con:configuration>
             </con:assertion>
             <con:credentials>
