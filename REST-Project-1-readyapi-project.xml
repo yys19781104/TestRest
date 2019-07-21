@@ -388,7 +388,7 @@
             <con:endpoint>https://api.github.com</con:endpoint>
             <con:request>{
   "message": "update from yangys testing",
-  "sha": "4593e27ae3f819320f46aeedea5a848253d82e0f"
+  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
 }</con:request>
             <con:originalUri>https://api.github.com/repos/yys19781104/TestRest/contents/SpringBoot/test1.txt</con:originalUri>
             <con:assertion type="Simple Contains" id="65ca7e9c-3a24-4187-a38a-3f0a44395b15" name="Contains">
