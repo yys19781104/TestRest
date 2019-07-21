@@ -61,10 +61,12 @@
         <con:request name="Request 1" id="edd4c002-ac14-4505-9f36-83b8d4c5c620" mediaType="application/json">
           <con:settings/>
           <con:endpoint>https://github.com</con:endpoint>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
         </con:request>
       </con:method>
